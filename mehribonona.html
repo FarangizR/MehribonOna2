@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Заботливая мама | Mehribon Ona</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff9fb;
+color:#333;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.navbar{
+max-width:1300px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#ff6f91;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:#444;
+font-weight:500;
+}
+
+.language-btn{
+padding:8px 15px;
+border:none;
+background:#ff6f91;
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+.hero{
+padding-top:120px;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(
+135deg,
+#ffe4ec,
+#fff9fb
+);
+}
+
+.hero-content{
+max-width:1200px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:50px;
+gap:40px;
+}
+
+.hero-text h1{
+font-size:52px;
+color:#ff6f91;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#ff6f91;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin-right:15px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.hero-image img{
+width:500px;
+max-width:100%;
+border-radius:25px;
+}
+
+section{
+padding:90px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:50px;
+color:#ff6f91;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#ff6f91;
+}
+
+.checklist{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.checklist label{
+display:block;
+margin:10px 0;
+}
+
+.calculator{
+background:white;
+padding:30px;
+border-radius:20px;
+max-width:600px;
+margin:auto;
+}
+
+.calculator input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.calculator button{
+width:100%;
+padding:12px;
+border:none;
+background:#ff6f91;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+.result{
+margin-top:20px;
+font-size:18px;
+font-weight:600;
+text-align:center;
+}
+
+footer{
+background:#ff6f91;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.hero-content{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="navbar">
+
+<div class="logo">
+👶 Заботливая мама
+</div>
+
+<nav>
+<ul>
+<li><a href="#home">Главная</a></li>
+<li><a href="#pregnancy">Беременность</a></li>
+<li><a href="#birth">Роды</a></li>
+<li><a href="#baby">Уход</a></li>
+<li><a href="#consult">Консультации</a></li>
+<li><a href="#contact">Контакты</a></li>
+</ul>
+</nav>
+
+<button class="language-btn" onclick="changeLanguage()">
+RU / UZ
+</button>
+
+</div>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-text">
+
+<h1 id="title">
+Ваш надежный помощник во время беременности и материнства
+</h1>
+
+<p id="subtitle">
+Всё для счастливой мамы и здорового малыша
+</p>
+
+<a href="#pregnancy" class="btn">
+Начать изучение
+</a>
+
+<a href="#consult" class="btn">
+Консультация
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=900"
+alt="mom">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="pregnancy">
+
+<div class="container">
+
+<h2 class="section-title">
+Беременность
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Календарь беременности</h3>
+<p>Подробное описание каждой недели беременности.</p>
+</div>
+
+<div class="card">
+<h3>Развитие малыша</h3>
+<p>Как растет ребенок по неделям.</p>
+</div>
+
+<div class="card">
+<h3>Питание</h3>
+<p>Рацион и полезные продукты для мамы.</p>
+</div>
+
+<div class="card">
+<h3>Упражнения</h3>
+<p>Безопасная физическая активность.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="birth">
+
+<div class="container">
+
+<h2 class="section-title">
+Что взять в роддом
+</h2>
+
+<div class="checklist">
+
+<label><input type="checkbox"> Паспорт</label>
+<label><input type="checkbox"> Обменная карта</label>
+<label><input type="checkbox"> Телефон</label>
+<label><input type="checkbox"> Зарядное устройство</label>
+<label><input type="checkbox"> Халат</label>
+<label><input type="checkbox"> Ночная рубашка</label>
+<label><input type="checkbox"> Подгузники</label>
+<label><input type="checkbox"> Одежда для малыша</label>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="baby">
+
+<div class="container">
+
+<h2 class="section-title">
+Уход за ребенком
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Купание малыша</h3>
+<p>Пошаговые инструкции для родителей.</p>
+</div>
+
+<div class="card">
+<h3>Смена подгузников</h3>
+<p>Правильный уход за кожей малыша.</p>
+</div>
+
+<div class="card">
+<h3>Сон ребенка</h3>
+<p>Режим и безопасность сна.</p>
+</div>
+
+<div class="card">
+<h3>Первая помощь</h3>
+<p>Полезные рекомендации родителям.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Калькулятор даты родов
+</h2>
+
+<div class="calculator">
+
+<input type="date" id="date">
+
+<button onclick="calculateDate()">
+Рассчитать
+</button>
+
+<div class="result" id="result">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="consult">
+
+<div class="container">
+
+<h2 class="section-title">
+Онлайн консультации
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>👩‍⚕️ Педиатр</h3>
+<p>Консультации по здоровью малыша.</p>
+</div>
+
+<div class="card">
+<h3>👩‍⚕️ Гинеколог</h3>
+<p>Помощь будущим мамам.</p>
+</div>
+
+<div class="card">
+<h3>🧠 Психолог</h3>
+<p>Эмоциональная поддержка семьи.</p>
+</div>
+
+<div class="card">
+<h3>🍼 Консультант ГВ</h3>
+<p>Советы по грудному вскармливанию.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer id="contact">
+
+<h2>Mehribon Ona / Заботливая мама</h2>
+
+<p>
+© 2026 Все права защищены
+</p>
+
+<p>
+Для счастливой мамы и здорового малыша ❤️
+</p>
+
+</footer>
+
+<script>
+
+let currentLang="ru";
+
+function changeLanguage(){
+
+if(currentLang==="ru"){
+
+document.getElementById("title").innerHTML=
+"Homiladorlik va onalik davridagi ishonchli yordamchingiz";
+
+document.getElementById("subtitle").innerHTML=
+"Baxtli ona va sog'lom bola uchun";
+
+currentLang="uz";
+
+
+
+
+document.getElementById("title").innerHTML=
+"Ваш надежный помощник во время беременности и материнства";
+
+document.getElementById("subtitle").innerHTML=
+"Всё для счастливой мамы и здорового малыша";
+
+currentLang="ru";
+
+}
+
+}
+
+function calculateDate(){
+
+let date=document.getElementById("date").value;
+
+if(date===""){
+alert("Введите дату");
+return;
+}
+
+let d=new Date(date);
+
+d.setDate(d.getDate()+280);
+
+document.getElementById("result").innerHTML=
+"Предполагаемая дата родов: "
++d.toLocaleDateString();
+
+}
+
+</script>
+
+</body>
+</html>
